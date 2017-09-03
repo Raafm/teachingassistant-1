@@ -13,9 +13,11 @@ import { AlunoService } from './aluno.service';
 export class AppComponent {
    aluno: Aluno = new Aluno();
    alunoService = new AlunoService();
+   alunos: Aluno[] = [];
 
    gravar(a: Aluno): void {
      this.alunoService.gravar(a);
      this.aluno = new Aluno();
+     this.alunos.push(a);
   }
 }
