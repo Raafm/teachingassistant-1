@@ -8,11 +8,11 @@ import { NgModule } from '@angular/core';
 })
 
 export class AppComponent {
-   aluno: Aluno = {nome: "Rodrigo", cpf: "000.000.000-00", email: "raafm@cin.ufpe.br"};
+   aluno: Aluno = {nome: "", cpf: "", email: ""};
 }
 
 export class Aluno {
-  nome: string;
-  cpf: string;
-  email: string;
+  nome: string | undefined;
+  cpf: string | undefined;
+  email: string | undefined;
 }
